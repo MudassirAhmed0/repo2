@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from '../styles/Home.module.css'
-import overlays from '../styles/Overlays.module.css'
+import overlays from '../styles/overlays.module.css'
 
 const Blue = ({children,boxShadowNone,topLess}) => {
   return (

@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import banner from '../../assets/images/home/banner/home-banner.jpg'
 import styles from '../../styles/Home.module.css'
-import overlays from '../../styles/Overlays.module.css'
+import overlays from '../../styles/overlays.module.css'
 import Link from 'next/link'
 
 
