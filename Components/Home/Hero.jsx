@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import banner from '../../assets/images/home/banner/home-banner.jpg'
 import styles from '../../styles/Home.module.css'
-import overlays from '../../styles/overlays.module.css'
+import overlays from '../../styles/Overlays.module.css'
 import Link from 'next/link'
 
 
@@ -11,10 +11,10 @@ const Hero = () => {
             <span className={styles.heroImg}>
                 <Image src={banner} layout='responsive' alt='Delivered'/>
             </span>
-            <span className={`absolute   ${overlays.heroTop} `}>
+            <span className={`absolute   ${Overlays.heroTop} `}>
                 
             </span>
-            <span className={`absolute   ${overlays.heroTop2} `}>
+            <span className={`absolute   ${Overlays.heroTop2} `}>
                 
             </span>
            <div className="container text-white relative ">

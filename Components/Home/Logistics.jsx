@@ -35,9 +35,9 @@ const Logistics = () => {
                 <span className="relative text-3xl text-grey uppercase medium-font">Customize Your Business Logistics</span>
          </div>
          <div className={`flex gap-y-8 text-white relative overflow-hidden flex-col bg-blue ${styles.accordion}`}>
-             <span className={overlays.accordionOverlay}>
+             <span className={Overlays.accordionOverlay}>
             </span>
-             <span className={overlays.accordionOverlay2}>
+             <span className={Overlays.accordionOverlay2}>
              </span>
             <div className={` flex flex-col gap-y-2  ${styles.accordionItem} ${styles.active}`}>
                 <span className={`text-2xl  medium-font relative cursor-pointer z-10  ${styles.accordionHeading}`} onClick={()=>handleAccordion(0)}>Freight Services</span>
