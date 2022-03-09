@@ -1,12 +1,14 @@
-import styles from '../../styles/Shipment.module.css'
+// import styles from '../../styles/Shipment.module.css'
 
 const ShipmentDetails = () => {
-  return (
-    <section className={styles.shipmentHero}>
-        <span className={styles.shipmentHeroImg}>
-                {/* <Image src={}/> */}
-        </span>
-    </section>
+  return ( <>
+  sdas
+  </>
+    // <section className={styles.shipmentHero}>
+    //     <span className={styles.shipmentHeroImg}>
+    //             {/* <Image src={}/> */}
+    //     </span>
+    // </section>
   )
 }
 
