@@ -5,7 +5,7 @@ import overlays from '../../styles/Overlays.module.css'
 const CTA = () => {
   return (
     <div className={`pt-8 pb-8 pr-11 pl-11 bg-yellow relative overflow-hidden  ${styles.cta}	`}>
-<span className={Overlays.logisticsOverlay}></span>
+<span className={overlays.logisticsOverlay}></span>
        <h4 className="text-grey text-4xl mb-1 medium-font relative">
        Expand Your Business with Zajil   
         </h4> 

@@ -5,7 +5,7 @@ import overlays from '../styles/Overlays.module.css'
 const Blue = ({children,boxShadowNone,topLess}) => {
   return (
     <section className={`relative    ${styles.blueBack}`}>
-         <span className={`absolute   ${Overlays.heroBottom} `}>
+         <span className={`absolute   ${overlays.heroBottom} `}>
                 
                 </span>
         <div className={` relative  overflow-visible  ${topLess? "-top-14":"-top-28"}   ${boxShadowNone} ${styles.whiteCard}`}>

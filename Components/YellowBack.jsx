@@ -5,7 +5,7 @@ const YellowBack = ({children,classha,roundedBottom}) => {
  
   return (
     <section  className={`pt-16 pb-24  relative  ${roundedBottom && "rounded-b-xl overflow-hidden"}  ${styles.logistics} ${classha}`}>
-        <span className={Overlays.logisticsOverlay}></span>
+        <span className={overlays.logisticsOverlay}></span>
         {children}
     </section>
   )

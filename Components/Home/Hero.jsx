@@ -11,10 +11,10 @@ const Hero = () => {
             <span className={styles.heroImg}>
                 <Image src={banner} layout='responsive' alt='Delivered'/>
             </span>
-            <span className={`absolute   ${Overlays.heroTop} `}>
+            <span className={`absolute   ${overlays.heroTop} `}>
                 
             </span>
-            <span className={`absolute   ${Overlays.heroTop2} `}>
+            <span className={`absolute   ${overlays.heroTop2} `}>
                 
             </span>
            <div className="container text-white relative ">
