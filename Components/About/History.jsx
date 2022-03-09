@@ -98,7 +98,7 @@ const History = () => {
                      </ul>
                      
                 </div>
-                <div className={`w-1/2 flex flex-col pl-10 pb-6 relative ${styles.lastHistoryItem}`}>
+                <div className={`w-1/2 flex flex-col pl-10 pb-6 z-10 relative ${styles.lastHistoryItem}`}>
                     <span className="text-blue bold-font relative pb-2 mb-4   border-b border-yellow text-4xl">
                     2021    
                         <span className={styles.rightBox}>
