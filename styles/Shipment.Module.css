@@ -2,9 +2,7 @@
     /* height: 778px; */
     position: relative;
 }
-.shipmentHeroImg{
-    /* height: 778px!important; */
-}
+ 
 .shipmentHeroImg > span{
     height: 100%!important;
 }
