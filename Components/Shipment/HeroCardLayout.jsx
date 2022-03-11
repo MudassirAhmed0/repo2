@@ -1,5 +1,5 @@
 
-import styles from '../../styles/Shipment.module.css' 
+import styles from '../../styles/Shipment.module.css';
 import Layout from '../Layout/Layout'
 
 const HeroCardLayout = ({children}) => {

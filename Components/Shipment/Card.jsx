@@ -1,4 +1,4 @@
-import styles from '../../styles/Shipment.module.css'
+import styles from '../../styles/Shipment.module.css';
 
 const Card = ({children}) => {
   return (

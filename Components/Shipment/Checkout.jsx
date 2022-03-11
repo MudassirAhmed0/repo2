@@ -1,6 +1,6 @@
 import yellowBox from '../../assets/images/svg/box.jpg'
 import Image from 'next/image'
-import styles from '../../styles/Shipment.module.css' 
+import styles from '../../styles/Shipment.module.css'; 
 import creditcardIcon1 from '../../assets/images/png files/master.png' 
 import creditcardIcon2 from '../../assets/images/png files/visa.png' 
 import madaIcon from '../../assets/images/png files/mada.png' 
