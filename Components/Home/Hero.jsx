@@ -17,6 +17,9 @@ const Hero = () => {
             <span className={`absolute   ${overlays.heroTop2} `}>
                 
             </span>
+            <span className={`absolute   ${overlays.heroBottomBlue} `}>
+                
+            </span>
            <div className="container text-white relative ">
                 <h1 className='text-4xl medium-font w-2/5'>
                 AFFORDABLE, SIMPLIFIED SHIPPING AND LOGISTICS
@@ -25,7 +28,7 @@ const Hero = () => {
                 Discover what our Saudi integrity and global capacity can do for your bottom line
                 </p>
                 <Link href="#" >
-                    <a className='w-36 h-10 flex justify-center rounded items-center border-2  border-yellow medium-font  hover:bg-yellow hover:text-grey'>
+                    <a className='w-36 h-10 flex justify-center rounded items-center border-2  transition-all duration-300 border-yellow medium-font  hover:bg-yellow hover:text-grey'>
                       Learn More
                     </a>
                 </Link>

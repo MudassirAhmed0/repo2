@@ -13,6 +13,9 @@ const ThreeGridContainer = () => {
          <span className={styles.cardYellowOverlay}>
 
          </span>
+         <span className={styles.cardYellowOverlay2}>
+
+         </span>
          <div className="absolute top-0 left-0 w-full h-full">
              <Image src={globalCapacity}/>
 
@@ -29,6 +32,9 @@ const ThreeGridContainer = () => {
      </div>
      <div className={`w-1/3 relative flex flex-col justify-end ${styles.threeCard}`}>
           <span className={styles.cardYellowOverlay}>
+
+         </span>
+          <span className={styles.cardYellowOverlay2}>
 
          </span>
         <div className="absolute top-0 left-0 w-full h-full">
@@ -48,6 +54,9 @@ const ThreeGridContainer = () => {
           <span className={styles.cardYellowOverlay}>
 
          </span>
+          <span className={styles.cardYellowOverlay2}>
+
+         </span>
      <div className="absolute top-0 left-0 w-full h-full">
          <Image src={simplicity}/>
         </div>
@@ -65,7 +74,7 @@ const ThreeGridContainer = () => {
     <div className="flex justify-center mt-10">
                 
         <Link href='#' >
-            <a  className='w-36 h-10   rounded-md border-2 border-yellow medium-font text-grey  hover:shadow-md  hover:shadow-shadaw flex justify-center items-center hover:bg-yellow'>
+            <a  className='w-36 h-10   transition-all duration-300 rounded-md border-2 border-yellow medium-font text-grey  hover:shadow-md  hover:shadow-shadaw flex justify-center items-center hover:bg-yellow'>
                     Learn More
 
             </a>

@@ -1,12 +1,22 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import logo from '../../assets/images/png files/logo.png'
 import arrow from '../../assets/images/svg/arrow.svg'
+import logo from '../../assets/images/svg/logo.svg'
 import styles from '../../styles/Layout.module.css'
+import MobileNumber from '../Popups/MobileNumber'
 
 const Header = ({noShipment}) => {
+    const manageShipment =()=>{
+         const modal = document.getElementById('mobileNumber')
+         
+        modal.classList.remove('opacity-0')
+        modal.classList.add('opacity-1')
+        modal.classList.remove('pointer-events-none')
+        modal.classList.add('pointer-events-auto')
+    }
   return (
-    <header className=' z-10 container flex items-center  text-lg  text-white absolute   left-1/2 transform -translate-x-1/2  top-4 '>
+      <>
+    <header className=' z-10 popup container flex items-center  text-lg  text-white absolute   left-1/2 transform -translate-x-1/2  top-4 '>
         <div>
             <Link href='/'>
                  <a>
@@ -103,7 +113,7 @@ const Header = ({noShipment}) => {
                 </li>
              {noShipment  ||   <li className={`cursor-pointer relative`}>
                     <Link href='#'>
-                         <a className='relative'>Track You Shipment  </a>
+                         <a className='relative'>Track Your Shipment  </a>
                     </Link>
                  
                 </li>}
@@ -118,14 +128,14 @@ const Header = ({noShipment}) => {
                 </Link>
             </li>
             <li className={styles.btn}>
-                <Link href="#">
-                    <a>
+                <button onClick={manageShipment}>
                         Manage Shipment
-                    </a>
-                </Link>
+                </button>
             </li>
         </ul>
     </header>
+    <MobileNumber />
+    </>
   )
 }
 

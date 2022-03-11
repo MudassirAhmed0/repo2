@@ -11,7 +11,7 @@ const CTA = () => {
         </h4> 
         <p className="text-lg text-grey light-font mb-12 relative ">Talk to a KSA shipping and logistics expert at Zajil today.</p>
         <Link href='#' >
-            <a  className='w-36 h-10   rounded-md   relative medium-font text-grey  shadow-md  hover:shadow-shadaw flex justify-center bg-white items-center hover:bg-yellow'>
+            <a  className='w-36 h-10   rounded-md  transition-all duration-300  relative medium-font text-grey  shadow-md  hover:shadow-shadaw flex justify-center bg-white items-center hover:text-blue'>
                     Learn More
 
             </a>

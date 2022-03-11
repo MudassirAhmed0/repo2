@@ -22,7 +22,7 @@ export default function Home() {
       </Head>
       <Layout noShipment> 
       <Hero/>
-      <Blue topLess>
+      <Blue home>
       <Track/>
             <RightImage />
             <ThreeGridContainer/>

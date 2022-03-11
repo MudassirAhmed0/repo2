@@ -26,6 +26,17 @@ background: transparent linear-gradient(180deg, var(--unnamed-color-0054a600) 0%
 background: transparent linear-gradient(180deg, #0054A600 0%, #0054A6 100%) 0% 0% no-repeat padding-box;
 opacity: 1;
 }
+.heroBottomBlue{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: transparent linear-gradient(180deg, var(--unnamed-color-0054a600) 0%, var(--unnamed-color-0054a6) 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(180deg, #0054A600 0%, #0054A6 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    height: 174px;
+    z-index: 4;
+    width: 100%;
+}
 .videoBottomOverlay{
     position: absolute;
     bottom: 0;

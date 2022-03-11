@@ -19,8 +19,8 @@ const CarouselContainer = () => {
             </h4>
         <HomeCarousel/>    
         <Link href='#' >
-            <a  className='w-36 h-10  mb-12 mt-10  rounded-md border-2 border-yellow medium-font text-grey  hover:shadow-md  hover:shadow-shadaw flex justify-center items-center hover:bg-yellow'>
-                    Learn More
+            <a  className='w-36 h-10  transition-all duration-300 mb-12 mt-10  rounded-md border-2 border-yellow medium-font text-grey  hover:shadow-md  hover:shadow-shadaw flex justify-center items-center hover:bg-yellow'>
+                    View More
 
             </a>
         </Link>

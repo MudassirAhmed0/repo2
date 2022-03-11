@@ -23,7 +23,7 @@ const about = () => {
             <Counter/>
         </Blue>
         <Vision/>
-        <Blue>
+        <Blue about2>
             <History/> 
 
         </Blue>

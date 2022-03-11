@@ -10,7 +10,7 @@ const Track = () => {
                   <input type="text"   placeholder='sa' name='track' id='track'/>
                   <label htmlFor="track">Tracking Number</label>
                  </div> 
-                 <button className='w-32 border border-white rounded text-grey bg-white  medium-font  shadow-md hover:bg-white hover:text-blue'>
+                 <button className='w-32 border border-white rounded text-grey bg-white  transition-all duration-300 medium-font  shadow-md hover:bg-white hover:text-blue'>
                   Track
                  </button>
                 </div>

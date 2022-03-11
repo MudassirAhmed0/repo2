@@ -38,8 +38,11 @@ object-fit: cover;
       bottom: -10px;
   }
   .bgYellow{
-      background-image: url('../assets/images/about-zajil-exprece/image/bg.jpg')!important;
-      background-position-y: -155px;
+    background-image: url('../assets/images/about-zajil-exprece/image/bg.jpg')!important; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .rightBox{
       position: absolute;
@@ -62,7 +65,7 @@ object-fit: cover;
   .historyItems::before{
         content: "";
         position: absolute;
-        top: 0;
+        top: 15px;
         left:0;
         width: 50%;
         height: 100%;

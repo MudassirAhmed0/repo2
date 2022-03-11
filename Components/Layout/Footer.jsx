@@ -1,5 +1,5 @@
 import styles from '../../styles/Layout.module.css' 
-import logo from '../../assets/images/png files/footer-logo.png'
+import logo from '../../assets/images/svg/logofooter.svg'
 import Image from 'next/image'
 import Link from 'next/link'
 import playStoreIcon from '../../assets/images/png files/playstoreWhite.png'

@@ -2,8 +2,14 @@ import styles from '../../styles/Home.module.css'
 import overlay from '../../styles/Overlays.module.css'
 import Image from 'next/image'
 import cube from '../../assets/images/svg/box-white.svg'
+import CountUp from 'react-countup';
+
+import VisibilitySensor from 'react-visibility-sensor';
+import { useState } from 'react';
 
 const Counter = () => {
+  const [startCounter,setStartCounter] = useState(false)
+
   return ( 
     <section className={`  relative  ${styles.videoSection}  mt-24`}>
         <span className={`bg-cardTopYellow ${styles.yellowTop}`}></span>
@@ -18,10 +24,16 @@ const Counter = () => {
             YES DELIVERED  
           </h4> 
         </div>
-        <div className={`flex justify-between text-white relative ${styles.counter}` }>
+        <VisibilitySensor partialVisibility offset={{ bottom: 200 }} >
+        {({isVisible})=>{
+          if(isVisible){
+            setStartCounter(true)
+          }
+        return(<div className={`flex justify-between text-white relative ${styles.counter}` }>
           <div className={`flex flex-col ${styles.counterItem}`}>
             <span className="text-5xl bold-font">
-              7M+
+            {startCounter &&  <CountUp duration={.5} end={7}/>}
+              M+
             </span>
             <span className="text-offWhite">
               Active Clients
@@ -29,7 +41,7 @@ const Counter = () => {
           </div>
           <div className={`flex flex-col ${styles.counterItem}`}>
             <span className="text-5xl bold-font">
-              396
+         {startCounter &&   <CountUp duration={.5} end={396}/>}
             </span>
             <span className="text-offWhite">
             Courier Vans
@@ -37,7 +49,7 @@ const Counter = () => {
           </div>
           <div className={`flex flex-col ${styles.counterItem}`}>
             <span className="text-5xl bold-font">
-              500+
+          {startCounter &&  <CountUp duration={.5} end={500}/>}+
             </span>
             <span className="text-offWhite">
             Corporate Clients
@@ -45,7 +57,7 @@ const Counter = () => {
           </div>
           <div className={`flex flex-col ${styles.counterItem}`}>
             <span className="text-5xl bold-font">
-              1055
+        {startCounter &&    <CountUp duration={.5} end={1055}/>}
             </span>
             <span className="text-offWhite">
             Employees
@@ -59,7 +71,8 @@ const Counter = () => {
             KSA Branches
             </span>            
           </div>
-        </div>
+        </div>)}}
+        </VisibilitySensor>
       </div>
     </section>
   )

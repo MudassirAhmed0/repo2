@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const Vision = () => {
   return (
-    <section className=' relative -top-28 bg-blue ' >
+    <section className=' relative  bg-blue ' >
        
         <div className="max-1394 flex   ml-auto mr-auto  justify-center">
             

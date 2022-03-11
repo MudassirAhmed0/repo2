@@ -1,14 +1,22 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import styles from '../styles/Home.module.css'
-import overlays from '../styles/Overlays.module.css'
 
-const Blue = ({children,boxShadowNone,topLess}) => {
+const Blue = ({children,boxShadowNone,home,about2}) => {
+  const blue = useRef()
+  const white = useRef()
+  useEffect(()=>{
+   setTimeout(()=>{
+     if(!about2){
+    let toBeSubtracted = home ? 69 :132
+    let height =white.current.clientHeight - toBeSubtracted 
+    console.log(height)
+    blue.current.style.height = height+"px"}
+   },500)
+  },[])
   return (
-    <section className={`relative    ${styles.blueBack}`}>
-         <span className={`absolute   ${overlays.heroBottom} `}>
-                
-                </span>
-        <div className={` relative  overflow-visible  ${topLess? "-top-14":"-top-28"}   ${boxShadowNone} ${styles.whiteCard}`}>
+    <section ref={blue} className={`relative    ${styles.blueBack}`}>
+        
+        <div ref={white} className={`   overflow-visible  ${about2? styles.about2 :   home ? styles.home  :styles.about}   ${boxShadowNone} ${styles.whiteCard}`}>
          {children}
         </div> 
     </section>
