@@ -3,7 +3,7 @@ import { useState } from 'react'
 import HeroCardLayout from '../Components/Shipment/HeroCardLayout'
 import Head from 'next/head'
 
-const shipment = () => {
+const Shipment = () => {
   const [shipmentStep,setShipmentStep] = useState(1)
   return (
     <>
@@ -20,4 +20,4 @@ const shipment = () => {
   )
 }
 
-export default  shipment
+export default  Shipment
