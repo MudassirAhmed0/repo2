@@ -24,7 +24,7 @@ const Contact = () => {
                 <meta name="description" content="" />
                 
             </Head>
-            <Layout>
+            <Layout noShipment={null}>
                 <Hero  /> 
                 <section ref={blue} className={`relative    ${styles.blueBack}`}>
         
