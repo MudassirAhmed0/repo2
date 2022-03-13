@@ -1,4 +1,4 @@
-import styles from '../../styles/Shipment.module.css';
+import styles from '../../styles/Chalja.module.css';
 import CardHeader from './CardHeader'
 
 const ShipmentHeader = ({shipmentStep}) => {

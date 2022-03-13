@@ -3,7 +3,7 @@ import times from '../../assets/images/svg/times.svg'
 import tick from '../../assets/images/svg/pentagonTick.svg'
 import loading from '../../assets/images/svg/pentagonLoading.svg'
 import CancelShipment from "../Popups/CancelShipment"
-import styles from '../../styles/Shipment.module.css'
+import styles from '../../styles/Chalja.module.css'
 import Image from 'next/image'
 import { useEffect } from 'react'
 

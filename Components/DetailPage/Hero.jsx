@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import overlays from '../../styles2/Overlays.module.css' 
 import HeroImg from '../../assets/images2/Zajil-Mobile-Application/banner/app-banner.png'
-import styles from '../../styles/Shipment.module.css';
+import styles from '../../styles/Chalja.module.css';
 
 const Hero = () => {
     return (

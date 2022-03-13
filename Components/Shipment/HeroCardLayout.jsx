@@ -1,5 +1,5 @@
 
-import styles from '../../styles/Shipment.module.css';
+import styles from '../../styles/Chalja.module.css';
 import Layout from '../Layout/Layout'
 import banner from '../../assets/images/about-zajil-exprece/image/bg.jpg'
 import Image from 'next/image' 

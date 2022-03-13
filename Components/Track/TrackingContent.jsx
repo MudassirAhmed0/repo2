@@ -1,5 +1,5 @@
 import CardContent from "../Shipment/CardContent"
-import styles from '../../styles/Shipment.module.css'
+import styles from '../../styles/Chalja.module.css'
 import info from '../../assets/images/svg/info.svg'
 import Image from 'next/image'
 import { useEffect, useState } from "react"
