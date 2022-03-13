@@ -37,7 +37,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="alternate icon" type="image/png" href="" />
         <link rel="alternate icon" type="image/svg+xml" href="" />
         <link rel="manifest" href="" />
-        <link rel="icon" href="/favicon.png" />
+        {/* <link rel="icon" href="/favicon.png" /> */}
           </Head>
           <Component {...pageProps} />
         </> 
