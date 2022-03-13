@@ -11,6 +11,7 @@ const Hero = () => {
         </span>
         <span className={styles.overlay2}>
         </span>
+        <span className="bottomOverlay"></span>
         <div className="container  relative text-white uppercase">
             <h1 className='text-4xl medium-font mb-2'>About <br />
                 Zajil Express

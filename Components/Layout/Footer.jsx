@@ -10,26 +10,28 @@ const Footer = () => {
     <footer className={`pt-12 ${styles.footerFluid}`}>
       <div className={styles.footer}>
         <div className="flex w-full">
-          <div className={`w-1/6 ${styles.footerLogo}`}>
-            <Image src={logo} alt="Logo"/>  
-          </div>
+          <Link href="/" >
+           <a className={`w-1/6 ${styles.footerLogo}`}>
+              <Image src={logo} alt="Logo"/>  
+            </a>
+          </Link>
           <ul className='medium-font text-white flex flex-col gap-y-4 w-1/6'>
             <li>
-              <Link href='#'>
+              <Link href='/about'>
                   <a>
                     About Us
                   </a>
               </Link>
             </li>
             <li>
-              <Link href='#'>
+              <Link href='/mediacenter'>
                   <a>
                     Media Center
                   </a>
               </Link>
             </li>
             <li>
-              <Link href='#'>
+              <Link href='/theapp'>
                   <a>
                     Mobile App
                   </a>
@@ -38,21 +40,21 @@ const Footer = () => {
           </ul>
           <ul className='medium-font text-white flex flex-col gap-y-4 w-1/6'>
             <li>
-              <Link href='#'>
+              <Link href='/contact'>
                   <a>
                     Contact Us
                   </a>
               </Link>
             </li>
             <li>
-              <Link href='#'>
+              <Link href='/career'>
                   <a>
                     Careers
                   </a>
               </Link>
             </li>
             <li>
-              <Link href='#'>
+              <Link href='/developertools'>
                   <a>
                     Developers Tools
                   </a>
@@ -61,21 +63,21 @@ const Footer = () => {
           </ul>
           <ul className='medium-font text-white flex flex-col gap-y-4 w-1/6'>
             <li>
-              <Link href='#'>
+              <Link href='/terms'>
                   <a>
                    Terms of Use
                   </a>
               </Link>
             </li>
             <li>
-              <Link href='#'>
+              <Link href='/privacy-policy'>
                   <a>
                     Privacy Policy
                   </a>
               </Link>
             </li>
             <li>
-              <Link href='#'>
+              <Link href='/faqs'>
                   <a>
                     FAQs
                   </a>

@@ -5,19 +5,34 @@ import creditcardIcon1 from '../../assets/images/png files/master.png'
 import creditcardIcon2 from '../../assets/images/png files/visa.png' 
 import madaIcon from '../../assets/images/png files/mada.png' 
 import applePayIcon from '../../assets/images/png files/apple.png' 
-import Invoice from '../Popups/Invoice'
+import Invoice from '../Popups/Invoice' 
+import { useState } from 'react';
 
-const CheckOut = ({step,setStep}) => {
+const CheckOut = ({step,setStep,state,setState,handleChange}) => { 
+    const [issue,setIssue] = useState(false)
     const handlePayment =()=>{
-     
-       const modal = document.getElementById('invoiceModal')
-       modal.classList.remove('opacity-0')
-       modal.classList.add('opacity-1')
-       modal.classList.remove('pointer-events-none')
-       modal.classList.add('pointer-events-auto')
+            setIssue(state.paymentOption == '')
+        if(state.paymentOption){
+            const modal = document.getElementById('invoiceModal')
+            modal.classList.remove('opacity-0')
+            modal.classList.add('opacity-1')
+            modal.classList.remove('pointer-events-none')
+            modal.classList.add('pointer-events-auto')
+    }
+    setTimeout(()=>{
+        setIssue(false)
+    },5000)
     }       
     const  previousStep =()=>{
         setStep(step -1)
+    }
+    const handlePaymentOption =(e)=>{
+        setState(()=>{
+            return {
+                ...state,
+                paymentOption: e.target.value
+            }
+        })
     }
   return (
     <>
@@ -102,23 +117,24 @@ const CheckOut = ({step,setStep}) => {
                             Payment Options
                         </span>
                         <div className="bg-offWhite2 pt-4 pb-6 px-5 text-lg font-light text-grey  rounded mt-2 rounded-lg">
-                            <ul>
+                            <ul className='relative'>
                                 <li className={`${styles.radioItem} mb-3 cursor-pointer`}>
-                                   <input type="radio" id='creditcard' name='paymentOption' />
+                                   <input onChange={handlePaymentOption} value='Credit Card' type="radio" id='creditcard' name='paymentOption' />
                                    <label className='flex items-center ' htmlFor="creditcard">Credit Card <span className="ml-auto flex items-center"> <Image src={creditcardIcon1} alt='Credit Card'/> <span className="mr-2"><Image src={creditcardIcon2} alt='Credit Card'/></span></span></label> 
                                 </li>
                                 <li className={`${styles.radioItem} mb-3 cursor-pointer`}>
-                                   <input type="radio" id='mada' name='paymentOption' />
+                                   <input onChange={handlePaymentOption} value='Mada' type="radio" id='mada' name='paymentOption' />
                                    <label className='flex items-center ' htmlFor="mada">Mada <span className='ml-auto flex items-center'> <Image src={madaIcon} alt='Mada'/></span></label> 
                                 </li>
                                 <li className={`${styles.radioItem} mb-3 cursor-pointer`}>
-                                   <input type="radio" id='applepay' name='paymentOption' />
+                                   <input onChange={handlePaymentOption} value='Apple Pay' type="radio" id='applepay' name='paymentOption' />
                                    <label className='flex items-center ' htmlFor="applepay">Apple Pay <span className='ml-auto flex items-center'> <Image src={applePayIcon} alt='Apple Pay'/></span></label> 
                                 </li>
+                          {issue &&  <span className='text-red-500 absolute -bottom-7'>Please Select Payment Option.</span>}
                             </ul>
                             <div className={`flex mt-7`}>
                  <div className={`medium-font  text-base ${styles.promocode}`}>
-                  <input type="text"   placeholder='sds' name='promoCode' id='promoCode'/>
+                  <input type="text"   placeholder='sds' name='promoCode' value={state.promoCode} onChange={handleChange} id='promoCode'/>
                   <label htmlFor="promoCode" className='cursor-pointer'>Promo Code</label>
                  </div> 
                  <button className='w-32 border  border-grey rounded pt-1 text-grey medium-font '>

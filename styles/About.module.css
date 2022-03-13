@@ -37,6 +37,9 @@ object-fit: cover;
       position: absolute;
       bottom: -10px;
   }
+  .historyContainer{
+      min-height: 1350px;
+  }
   .bgYellow{
     background-image: url('../assets/images/about-zajil-exprece/image/bg.jpg')!important; 
     background-attachment: fixed;

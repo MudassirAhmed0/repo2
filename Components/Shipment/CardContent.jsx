@@ -1,9 +1,9 @@
  
 import styles from '../../styles/Shipment.module.css';
 
-const CardContent = ({children}) => {
+const CardContent = ({children,noPadding }) => { 
   return (
-    <div className={`pt-6 pb-10 ${styles.shipmentContent}`}>
+    <div className={`pt-6 pb-10  ${noPadding || styles.shipmentContent}`}>
         {children}
     </div>
   )

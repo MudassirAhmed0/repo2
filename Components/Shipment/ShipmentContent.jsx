@@ -5,31 +5,31 @@ import ReceiverDetails from './ReceiverDetails'
 import SenderDetails from './SenderDetails'
 import ShipmentDetails from './ShipmentDetails'
 
-const ShipmentContent = ({shipmentStep,setShipmentStep}) => {
-     
+const ShipmentContent = ({shipmentStep,setShipmentStep,state,setState,handleDropDownClick,handleChange}) => {
+   
         switch (shipmentStep) {
             case 1:
                 return   (
                      <CardContent>
-                         <ShipmentDetails step={shipmentStep} setStep={setShipmentStep}/>
+                         <ShipmentDetails state={state} setState={setState} handleDropDownClick={handleDropDownClick} handleChange={handleChange} step={shipmentStep} setStep={setShipmentStep}/>
                      </CardContent>
                         )
             case 2:
                 return   (
                         <CardContent>
-                            <SenderDetails step={shipmentStep} setStep={setShipmentStep}/>
+                            <SenderDetails state={state} setState={setState} handleDropDownClick={handleDropDownClick} handleChange={handleChange} step={shipmentStep} setStep={setShipmentStep}/>
                         </CardContent>
                         )
             case 3:
                 return   (
                         <CardContent>
-                            <ReceiverDetails step={shipmentStep} setStep={setShipmentStep}/>
+                            <ReceiverDetails state={state} setState={setState} handleDropDownClick={handleDropDownClick} handleChange={handleChange} step={shipmentStep} setStep={setShipmentStep}/>
                         </CardContent>
                         )
             case 4:
                 return   (
                         <CardContent>
-                            <CheckOut step={shipmentStep} setStep={setShipmentStep}/>
+                            <CheckOut state={state} setState={setState}  handleChange={handleChange} step={shipmentStep} setStep={setShipmentStep}/>
                         </CardContent>
                         )
         } 

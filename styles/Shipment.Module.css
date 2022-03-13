@@ -1,5 +1,5 @@
 .shipmentHero{
-    /* height: 778px; */
+    height: 705px;
     position: relative;
 }
  
@@ -21,7 +21,7 @@
 .shipmentBottomOverlay{
     position: absolute;
     width: 100%;
-    bottom: 0;
+    bottom: 0rem;
     height: 174px;
     background: transparent linear-gradient(180deg, var(--unnamed-color-0054a600) 0%, var(--unnamed-color-0054a6) 100%) 0% 0% no-repeat padding-box;
     background: transparent linear-gradient(180deg, #0054A600 0%, #0054A6 100%) 0% 0% no-repeat padding-box;
@@ -34,16 +34,22 @@
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 10px;
     opacity: 1;
-    position: relative; 
-    margin-left: auto;
-    margin-right: auto;
+    position: absolute;
+    top: 6rem; 
+    left: 50%;
+    transform: translateX(-50%);
     overflow: hidden;
+}
+.minHM{
+    
+  min-height: 450px;
 }
 .shipmentHeader{
     height: 120px;
     background-color:#f4f4f4;  
     padding-left: 5.46%;
     padding-right: 5.46%;      
+    border: 1px solid #DBDBDB;
 }
 
 .hexagon {
@@ -105,6 +111,27 @@
     background: #FFFFFF 0% 0% no-repeat padding-box;
     mix-blend-mode: color;
     opacity: 1;
+  }
+  .shipmentProgressLine{
+      position: relative;
+  }
+  .shipmentProgressLine::before{
+      content: '';
+      position: absolute;
+      top: 28px;
+      width: 90%;
+      left: 5%;
+      height: 2px;
+      background-color: #fff;
+  }
+  .shipmentProgressLine::after{
+      content: '';
+      position: absolute;
+      top: 28px;
+      width: 23%;
+      left: 5%;
+      height: 2px;
+      background-color: #24343f;
   }
   .boxesBetweenLine::before{
       content: '';

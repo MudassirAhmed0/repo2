@@ -28,23 +28,23 @@ const Header = ({noShipment}) => {
             <ul className='flex ml-20 gap-x-10'>
                 <li className={`cursor-pointer relative ${styles.dropdownBtn}`}>
                     <span className='relative'>Ship   <span className='relative -top-0.5 -right-0.3'><Image   src={arrow}/></span></span>
-                    <ul className={`absolute top-8 -left-6 p-4 pl-6 flex  flex-col gap-y-3 bg-white text-black text-base ${styles.dropdownMenu}`}>
+                    <ul className={`absolute top-7 -left-6 p-4 pl-6 flex  flex-col gap-y-3 bg-white text-black text-base ${styles.dropdownMenu}`}>
                         <li className={styles.dropdownMenuItem}>
-                            <Link href="#">
+                            <Link href="/shipment">
                                 <a>
                                     Create Shipment
                                 </a>
                             </Link>
                         </li>
                         <li className={styles.dropdownMenuItem}>
-                            <Link href="#">
+                            <Link href="/manage-shipments">
                                 <a>
                                     Manage Shipments
                                 </a>
                             </Link>
                         </li>
                         <li className={styles.dropdownMenuItem}>
-                            <Link href="#">
+                            <Link href="/get-pricing">
                                 <a>
                                     Get Price Estimate
                                 </a>
@@ -61,30 +61,30 @@ const Header = ({noShipment}) => {
                 </li>
                 <li className={`cursor-pointer relative ${styles.dropdownBtn}`}>
                     <span className='relative'>Solutions  <span className='relative -top-0.5 -right-0.3'><Image   src={arrow}/></span></span>
-                    <ul className={`absolute top-8 -left-6 p-4 pl-6 flex  flex-col gap-y-3 bg-white text-black text-base ${styles.dropdownMenu}`}>
+                    <ul className={`absolute top-7 -left-6 p-4 pl-6 flex  flex-col gap-y-3 bg-white text-black text-base ${styles.dropdownMenu}`}>
                         <li className={styles.dropdownMenuItem}>
-                            <Link href="#">
+                            <Link href="/ecommerce">
                                 <a>
                                     E-commerce
                                 </a>
                             </Link>
                         </li>
                         <li className={styles.dropdownMenuItem}>
-                            <Link href="#">
+                            <Link href="/freight">
                                 <a>
                                     Freight
                                 </a>
                             </Link>
                         </li>
                         <li className={styles.dropdownMenuItem}>
-                            <Link href="#">
+                            <Link href="/fulfilment">
                                 <a>
                                     Fulfilment
                                 </a>
                             </Link>
                         </li>
                         <li className={styles.dropdownMenuItem}>
-                            <Link href="#">
+                            <Link href="/ksadistribution">
                                 <a>
                                     Domestic Distribution
                                 </a>
@@ -94,16 +94,16 @@ const Header = ({noShipment}) => {
                 </li>
                 <li className={`cursor-pointer relative ${styles.dropdownBtn}`}>
                     <span className='relative'>Help & Support  <span className='relative -top-0.5 -right-0.3'><Image   src={arrow}/></span></span>
-                    <ul className={`absolute top-8 -left-6 p-4 pl-6 flex  flex-col gap-y-3 bg-white text-black text-base ${styles.dropdownMenu}`}>
+                    <ul className={`absolute top-7 -left-6 p-4 pl-6 flex  flex-col gap-y-3 bg-white text-black text-base ${styles.dropdownMenu}`}>
                         <li className={styles.dropdownMenuItem}>
-                            <Link href="#">
+                            <Link href="/faqs">
                                 <a>
                                     FAQs
                                 </a>
                             </Link>
                         </li>
                         <li className={styles.dropdownMenuItem}>
-                            <Link href="#">
+                            <Link href="/contact">
                                 <a>
                                     Contact Us
                                 </a>
@@ -112,10 +112,10 @@ const Header = ({noShipment}) => {
                     </ul> 
                 </li>
              {noShipment  ||   <li className={`cursor-pointer relative`}>
-                    <Link href='#'>
+                    <Link href='/track'>
                          <a className='relative'>Track Your Shipment  </a>
                     </Link>
-                 
+                
                 </li>}
             </ul>
         </nav>

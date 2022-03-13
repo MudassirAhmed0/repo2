@@ -97,8 +97,8 @@ a {
   width: 100%!important;
   height: 100%!important;
 }
-.img_container > img{
-  object-fit: cover;
+.img_container  img{
+  object-fit: cover!important;
 }
 .w-46-per{
   width: 46.5%;
@@ -153,8 +153,22 @@ backdrop-filter: blur(7px);
    color: #0054a6;
    font-size: 18px;
 }
+.mobileNumberInput input:focus::placeholder{
+   opacity: 0;
+}
+.mobileNumberInput input:focus {
+  border-bottom: 2px solid #0054a6;
+}
 .fadeLeftt{
   animation:  fadeleft 1s;
+}
+.bottomOverlay{
+  position: absolute;
+    width: 100%;
+    bottom: 0rem;
+    height: 174px;
+    background: transparent linear-gradient(180deg, var(--unnamed-color-0054a600) 0%, var(--unnamed-color-0054a6) 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(180deg, #0054A600 0%, #0054A6 100%) 0% 0% no-repeat padding-box;
 }
 @keyframes fadeleft{
   from{
@@ -178,4 +192,63 @@ backdrop-filter: blur(7px);
     right: 0;
     opacity: 1;
   }
+}
+ 
+.w-69 {
+  width: 69.5%;
+}
+
+.max-1394 {
+  max-width: 1394px;
+}
+
+.img_container>span {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.img_container>img {
+  object-fit: cover !important;
+}
+ 
+
+.parent .react-multiple-carousel__arrow--left {
+  left: -15px !important;
+  top: -5px;
+}
+
+.parent .react-multiple-carousel__arrow--right {
+  right: -15px !important;
+  top: -5px;
+}
+
+.parent .react-multi-carousel-list {
+  padding-left: 5% !important;
+  padding-right: 5% !important;
+  padding-bottom: 0 !important;
+}
+
+.parent .react-multi-carousel-item {
+  width: 230px !important;
+}
+
+.parent .react-multiple-carousel__arrow::before {
+  font-weight: bolder;
+}
+
+.img-border>span {
+  border-radius: 10px !important;
+}
+
+.parentfull .react-multi-carousel-list {
+  padding-left: 1% !important;
+  padding-right: 5% !important;
+  padding-bottom: 0 !important; 
+}
+
+.ksa-image > span{
+  
+  width: 749px !important;
+  height: 340px !important;
+
 }

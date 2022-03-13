@@ -14,7 +14,7 @@ const History = () => {
     const [show5,setShow5] = useState(false)
 
   return (
-    <section className=" flex flex-col relative items-center  pb-28">
+    <section className={` flex flex-col relative items-center  pb-28 ${styles.historyContainer}`}>
         <span className={styles.kamalDekho}>
 
         </span>
