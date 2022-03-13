@@ -8,7 +8,7 @@ import layoutStyles from '../../styles2/Layout.module.css'
 import { useState } from 'react'
 
 
-const contactDetail = () => {
+const ContactDetail = () => {
     const [state,setState] =useState({
         email:'',
         fullName:'',
@@ -145,4 +145,4 @@ const contactDetail = () => {
     )
 }
 
-export default contactDetail
+export default ContactDetail

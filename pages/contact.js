@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Hero from '../Components/Contact/Hero'
 import Layout from '../Components/Layout/Layout'  
-import ContactDetail from '../Components/Contact/contactDetail'
+import ContactDetail from '../Components/Contact/ContactDetail'
 import { useEffect, useRef } from 'react'
 import styles from '../styles/Home.module.css'
 
