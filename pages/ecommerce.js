@@ -13,9 +13,9 @@ const Ecommerce = () => {
                 <meta name="description" content="" />
                 
             </Head>
-            <Layout>  
-                <Hero />
-                <Blue>
+            <Layout noShipment={null}>
+        <Hero/>
+        <Blue home={null} about2={null} boxShadowNone={styles.boxShadowNone}>
                     <EcommerceDetail />
                 </Blue>
                 <DownloadPdf />

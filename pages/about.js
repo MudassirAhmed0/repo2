@@ -16,9 +16,9 @@ const About = () => {
         <meta name="description" content="" />
         
     </Head> 
-    <Layout>
+    <Layout noShipment={null}>
         <Hero/>
-        <Blue boxShadowNone={styles.boxShadowNone}>
+        <Blue home={null} about2={null} boxShadowNone={styles.boxShadowNone}>
             <RightImage/>
             <Counter/>
         </Blue>

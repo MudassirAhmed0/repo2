@@ -9,7 +9,7 @@ const Branches = () => {
         <meta name="description" content="" />
         
     </Head> 
-    <Layout>
+    <Layout noShipment={null}>
 
     </Layout>
     </>

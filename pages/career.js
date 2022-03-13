@@ -12,9 +12,9 @@ const Career = () => {
                 <meta name="description" content="" />
                 
             </Head>
-            <Layout> 
+            <Layout noShipment={null}> 
                 <Hero />
-                <Blue>
+                <Blue home={null} about2={null} boxShadowNone={null}>
                     <CareerDetail />
                 </Blue>
             </Layout>

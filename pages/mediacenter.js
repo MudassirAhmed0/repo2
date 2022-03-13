@@ -24,9 +24,8 @@ const Mediacenter = () => {
                 <meta name="description" content="" />
                 
             </Head>
-            <Layout> 
-                <Hero />
-               
+            <Layout noShipment={null}>
+        <Hero/> 
                 <section ref={blue} className={`relative    ${styles.blueBack}`}>
         
                     <div ref={white} className={`   overflow-visible   ${styles.ph}    ${styles.whiteCard}`}>

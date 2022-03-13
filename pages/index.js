@@ -20,9 +20,9 @@ export default function Home() {
         <meta name="description" content="" />
         
       </Head>
-      <Layout noShipment> 
-      <Hero/>
-      <Blue home>
+      <Layout noShipment>
+        <Hero/>
+        <Blue home about2={null} boxShadowNone={styles.boxShadowNone}>
       <Track/>
             <RightImage />
             <ThreeGridContainer/>

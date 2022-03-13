@@ -21,9 +21,9 @@ const NewsDetail = () => {
                 <meta name="description" content="" />
                 
             </Head>
-            <Layout>
-                <Hero />
-            <Card>
+            <Layout noShipment={null}>
+        <Hero/> 
+          <Card>
                     <DetailPage />
                 </Card>
                  
